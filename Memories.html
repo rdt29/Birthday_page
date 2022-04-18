@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaibiiii</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
+	@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+	@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Square+Peg&display=swap);
+
+
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+
+            scroll-behavior: smooth;
+
+
+        }
+
+        #main {
+            min-height: 100%;
+            width: 100%;
+        }
+
+        .slide {
+            margin: 20px 30px;
+            min-height: 100vh;
+            width: 80%;
+            border: 2px solid black;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+
+        }
+
+        #img1 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img1.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+
+        }
+
+        #img1:hover {
+            width: 100%;
+            height: 90vh;
+            background-image: url(img15.jpeg);
+            background-size: contain;
+            /* background-position: 5px 2px; */
+            cursor: pointer;
+            border-radius: 100px;
+        }
+        #img2 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img2.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            /* transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 5s; */
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+            
+        }
+        
+        #img2:hover {
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            /* transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 5s; */
+            width: 80%;
+            height: 50vh;
+            background-image: url(img16.jpeg);
+            background-size: cover;
+            background-position: 5px 2px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+
+        /* #img3 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img7.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        #img3:hover {
+            width: 80%;
+            height: 50vh;
+            background-image: url(img4.jpeg);
+            background-size: cover;
+            background-position: 5px 2px;
+            cursor: pointer;
+            border-radius: 100px;
+        } */
+
+
+        #img4 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img8.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        #img4:hover {
+            width: 80%;
+            height: 30vh;
+            background-image: url(img13.jpeg);
+            background-size: cover;
+            
+            background-position: 5px -122px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        #img5 {
+            width: 80%;
+            height: 76vh;
+            background-image: url(./img9.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        
+
+
+        #img6 {
+            width: 80%;
+            height: 90vh;
+            background-image: url(./img10.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+       
+        #img7 {
+            width: 80%;
+            height: 75vh;
+            background-image: url(./img11.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        #img8{
+            width: 80%;
+            height: 70vh;
+            background-image: url(img4.jpeg);
+            background-size: cover;
+            background-position: 5px 2px;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+
+        #img9 {
+            width: 80%;
+            height: 75vh;
+            background-image: url(./img12.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+       
+
+
+        #img10 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img14.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+       
+
+
+        #img11 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img15.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+       
+        #img12 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img16.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        
+
+        #img13 {
+            width: 80%;
+            height: 50vh;
+            background-image: url(./img3.jpeg);
+            background-position: 0px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        
+        #img14 {
+            width: 80%;
+            height: 80vh;
+            background-image: url(./img5.jpeg);
+            background-position: -10px 0px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+        #img15 {
+            width: 80%;
+            height: 70vh;
+            background-image: url(./img6.jpeg);
+            background-position: 1px 1px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+
+        #img16 {
+            width: 80%;
+            height: 40vh;
+            background-image: url(./img13.jpeg);
+            background-position: 0px -93px;
+            background-size: cover;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 5s;
+            border-radius: 50px;
+            margin: 20px 0px;
+
+        }
+        #back , #top
+        {
+            height: 20px;
+            width: 80px;
+            background-color: rgba(71, 68, 230, 0.689);
+            border: none;
+            font-size: larger;
+            margin: 0px 0px 20px 50px;
+        }
+        #back a
+        {
+            color: #fff;
+            
+            text-decoration: none;
+            
+
+        }
+
+        #top a
+        {
+            text-decoration: none;
+            color: #fff;
+            
+        }
+
+        footer
+        {
+            background-color: black;
+            position: absolute;
+            color: #fff;
+            margin: 0px 20px;
+            padding: 5px;
+            
+            left: 12.5%;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <h1 style=" font-family: 'Dancing Script', sans-serif;text-decoration: underline; font-size: 50px;"><center>Memories</center></h1>
+
+        <p style="padding: 20px 20px;">(Touch Top 3 photos to see transition 💫)</p>
+
+        <Button id="back"><a href="Birthday.html">Back</a></Button>
+
+        <div class="class">
+            <div id="img1"></div>
+            <p>Thankyou For being such an amazing friend 🤗</p>
+            <div id="img2"></div>
+            <p>Thanks for Always Supporting me 😁</p>
+            <!-- <div id="img3"></div> -->
+            <div id="img4"></div>
+            <p>Thanks For always being there for me 😌</p>
+            <div id="img5"></div>
+            <p>Thanks for Always guid the right path ❣️</p>
+            <div id="img6"></div>
+            <p>Thanks for Trusting me ❤️</p>
+            <div id="img7"></div>
+            <p>Thanks for making me Feel special Friend 💝</p>
+            <div id="img8"></div>
+            💝
+            <div id="img9"></div>
+            <p>Thanks for Laughing in my bad jokes 😂😂😅😅😅</p>
+            <div id="img10"></div>
+            <p>Thanks for make me laugh and you always help to restore my spirits when I start feeling down. ❣️</p>
+            <div id="img11"></div>
+            <p>Thanks for doing your job as my Motivator! 😂</p>
+            <div id="img12"></div>
+            <p>Thank-you For everything 💞💖</p>
+            <div id="img13"></div>
+            <p>❤️</p>
+            <div id="img14"></div>
+            <p>❤️</p>
+            <div id="img15"></div>
+            <p>❤️</p>
+            <div id="img16"></div>
+            <p>❤️</p>
+            <Button id="back"><a href="Birthday.html">Back</a></Button>
+
+            <button id="top"><a href="#main">Top</a></button>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <center>
+
+            Create/Design by Raddiiii&nbsp;&nbsp;&nbsp;❤️
+        </center>
+    </footer>
+    
+
+</body>
+
+</html>
